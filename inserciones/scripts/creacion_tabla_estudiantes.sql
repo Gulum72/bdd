@@ -45,3 +45,7 @@ where cedula like '17%'
 --recuperar nombres completos con A
 select nombre,apellido from estudiantes
 where nombre like 'A%'
+
+--cambiar apellido por hermandez
+update estudiantes set apellido = 'Hernandez'
+where cedula like '17%'

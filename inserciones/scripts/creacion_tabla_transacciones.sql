@@ -58,3 +58,8 @@ where monto between '200' and '2000'
 --fecha diferente de null
 select codigo,monto,tipo,fecha from transacciones
 where fecha is not null
+
+
+--actualizar tipo cuando 100 a 500
+update transacciones set tipo='T'
+where monto between '100' and '500' and fecha between '01/09/2024' and '30/09/2024' and hora between '14:00' and '20:00'

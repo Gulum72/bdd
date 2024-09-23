@@ -50,3 +50,8 @@ select * from productos where descripcion is null
 --creando select precios entre 2 y 3
 select * from productos
 where precio between '2' and '3'
+
+
+--colocando en 0 productos con null
+update productos set stock = 0
+where descripcion is null

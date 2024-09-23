@@ -50,3 +50,7 @@ where valoracion between '9' and '10'
 --descriocion null
 select * from videojuegos
 where descripcion is null
+
+--actualizacion a puntajes mayores de 9
+update videojuegos set descripcion = 'mejor puntuado'
+where valoracion > '9'
