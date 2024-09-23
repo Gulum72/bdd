@@ -41,3 +41,14 @@ values (01101,'18783','09/03/2024',89.52)
 
 --mostrar columnas de la tabla
 select * from cuentas
+
+--mostrar todos los numeros de cuenta y saldos de cuenta
+select numero_cuenta,saldo from cuentas
+
+--registros desde hoy hasta 2 meses antes 
+select * from cuentas
+where fecha_creacion between '22/07/2024' and '22/09/2024'
+
+--recuperando cuenta y saldo desde hoy hasta 2 meses atras
+select numero_cuenta,saldo from cuentas
+where fecha_creacion between '22/07/2024' and '22/09/2024'

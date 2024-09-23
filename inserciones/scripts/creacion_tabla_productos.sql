@@ -39,3 +39,14 @@ values (8,'chupete',0.25,13)
 
 --mostrar columnas de la tabla
 select * from productos
+
+--creando select busqueda Q
+select * from productos
+where nombre like 'Q%'
+
+--creando select descripcion null
+select * from productos where descripcion is null
+
+--creando select precios entre 2 y 3
+select * from productos
+where precio between '2' and '3'

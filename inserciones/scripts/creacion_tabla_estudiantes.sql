@@ -26,7 +26,7 @@ insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('8913495841','Joaquin','Gonzales','joaquingonzales@gmail.com','19/02/2003')
 --7
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
-values ('1827485914','Elisa','Travez','elisatraves@gmail.com','17/08/2000')
+values ('1727485914','Elisa','Travez','elisatraves@gmail.com','17/08/2000')
 --8
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('2859194841','Gonzalo','Jimenez','gonzalojimenez@gmail.com','10/10/2009')
@@ -34,3 +34,14 @@ values ('2859194841','Gonzalo','Jimenez','gonzalojimenez@gmail.com','10/10/2009'
 
 --mostrar columnas de la tabla
 select * from estudiantes
+
+--recuperar nombre y cedula
+select nombre,cedula from estudiantes
+
+--recuperar nombre estudiantes con cedula que empiece en 17
+select nombre from estudiantes
+where cedula like '17%' 
+
+--recuperar nombres completos con A
+select nombre,apellido from estudiantes
+where nombre like 'A%'

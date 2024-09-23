@@ -38,3 +38,15 @@ values (2027,'LOL','10')
 
 --mostrar columnas de la tabla
 select * from videojuegos
+
+--nombres que comiencen en C
+select * from videojuegos
+where nombre like 'c%'
+
+--valoracion entre 9 y 10
+select * from videojuegos
+where valoracion between '9' and '10'
+
+--descriocion null
+select * from videojuegos
+where descripcion is null

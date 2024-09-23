@@ -46,3 +46,15 @@ values (01101,'18783',62.50,'C','22/05/2024','14:23')
 
 --mostrar columnas de la tabla
 select * from transacciones
+
+--transacciones tipo D
+select * from transacciones
+where tipo= 'D'
+
+--transacciones entre 200 y 2000
+select * from transacciones
+where monto between '200' and '2000'
+
+--fecha diferente de null
+select codigo,monto,tipo,fecha from transacciones
+where fecha is not null

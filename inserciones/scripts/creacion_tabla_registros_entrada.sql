@@ -44,3 +44,14 @@ values (1120,'2959182949','01/01/2024','08:18')
 
 --mostrar columnas de la tabla
 select * from registros_entrada
+
+--seleccionar cedula,fecha y hora
+select cedula_empleado, fecha, hora from registros_entrada
+
+--registros de entrada entre 7:00 y 14:00
+select * from registros_entrada
+where hora between '7:00' and '14:00'
+
+--registros de entrada superiores a 8:00
+select * from registros_entrada
+where hora >'8:00' 
