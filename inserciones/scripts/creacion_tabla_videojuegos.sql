@@ -89,3 +89,15 @@ values(63240, 'Crash', 'juego de deprote', 9);
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values(63549, 'Dragon Ball', 'juego de baile', 8);
+
+--listar con nombre C o valoracion 7
+select * from videojuegos
+where nombre like '%c%' or valoracion = 7
+
+--seleccionar codigo entre 3 y 7
+select * from videojuegos
+where (codigo between '3' and '7') or (valoracion = 7)
+
+--seleccionar juegos de guerra
+select * from videojuegos
+where (valoracion >7 and nombre like 'c%') or (valoracion >8 and nombre like 'D%')

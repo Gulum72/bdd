@@ -94,3 +94,16 @@ values(12358, '1712546328', '07/07/2008', '21:00');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
 values(12378, '1725785413', '02/09/2023', '4:00');
+
+--registros de septiembre
+select * from registros_entrada
+where (fecha between '01/09/2024' and '30/09/2024') or (cedula_empleado like '17%')
+
+--registros de agosto
+select * from registros_entrada
+where (fecha between '01/08/2024' and '31/08/2024') or (hora between '8:00' and '12:00')
+
+--registros de agosto v2
+select * from registros_entrada
+where (fecha between '01/08/2024' and '31/08/2024' and cedula_empleado like '17%' and hora between '8:00' and '12:00' )
+or (fecha between '01/09/2024' and '30/09/2024' and cedula_empleado like '08%' and hora between '9:00' and '13:00')

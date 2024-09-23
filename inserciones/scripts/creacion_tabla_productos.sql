@@ -82,3 +82,16 @@ insert into productos(codigo,nombre,precio,stock)
 values (17,'Jamon',1.00,120);
 insert into productos(codigo,nombre,precio,stock)
 values (18,'Coca Cola',3.50,300);
+
+
+--productos stock =10 o precio <10
+select * from productos
+where stock = '10' and precio < '10'
+
+--productos con M en el nombre o espacio blanco en descripcion
+select nombre,stock from productos
+where nombre like '%m%' or descripcion =' '
+
+--seleccionar nombre de productos null
+select nombre from productos
+where descripcion is null or stock = 0

@@ -83,3 +83,16 @@ insert into cuentas (numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values (25577,17512,'15/08/2025',3500);
 insert into cuentas (numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values (25578,17503,'15/06/2017',4500);
+
+
+--seleccionar numero cuentas y saldo
+select numero_cuenta,saldo from cuentas
+where saldo >money(100) and saldo <money(1000)
+
+--seleccionar cuentas de hasta hace 1 anio
+select * from cuentas
+where fecha_creacion between '22/09/2024' and '22/09/2023'
+
+--seleccionar cuentas saldo 0 o cedula temine en 2
+select * from cuentas
+where saldo=money(0) or cedula_propietario like '%2'

@@ -75,3 +75,15 @@ insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
 values (1235476809,'Anabel','Perlaza','WPerlaza18@gmail.com','12/04/2000');
 insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
 values (1735476810,'Sofía','Jimenez','SofiJz22@gmail.com','22/01/2001');
+
+--nombre y apellido de estudiante con nombre M o apellido 	Z
+select nombre, apellido from estudiantes
+where nombre like 'M%' or apellido like '%z'
+
+--select q traiga nombres numero 32
+select nombre from estudiantes
+where cedula like '18%' or cedula like '%32%'
+
+--select nombres completos cedula termine en 06 y empiece en 17
+select nombre,apellido from estudiantes
+where cedula like '17%' or cedula like '%06'
