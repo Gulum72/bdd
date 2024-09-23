@@ -54,3 +54,7 @@ where descripcion is null
 --actualizacion a puntajes mayores de 9
 update videojuegos set descripcion = 'mejor puntuado'
 where valoracion > '9'
+
+--eliminar juegos con valoracion menor que 7
+delete from videojuegos
+where valoracion <7

@@ -59,3 +59,7 @@ where hora >'8:00'
 --actualizar todas las cedulas
 update registros_entrada set cedula_empleado = '082345679'
 where fecha between '01/08/2024' and '31/08/2024'
+
+--eliminar todos los registros del mes de junio
+delete from registros_entrada
+where fecha between '01/06/2024' and '30/06/2024'

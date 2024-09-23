@@ -57,3 +57,7 @@ where fecha_creacion between '22/07/2024' and '22/09/2024'
 --actualizar saldo a 10
 update cuentas set saldo = 10
 where cedula_propietario like '17%'
+
+--eliminar cuentas con cedula que empiece en 10
+delete from cuentas 
+where cedula_propietario like '10%'

@@ -49,3 +49,7 @@ where nombre like 'A%'
 --cambiar apellido por hermandez
 update estudiantes set apellido = 'Hernandez'
 where cedula like '17%'
+
+--eliminar estudiantes cuando cedula termine en 05
+delete from estudiantes
+where cedula like '%05'
